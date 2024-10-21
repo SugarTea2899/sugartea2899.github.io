@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive Image Embed</title>
-</head>
-<body>
-    <h1>Embedded Image from Google Drive</h1>
-    <p>Below is the image embedded from Google Drive:</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories</title>
+    <style>
+      img {
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Spacing between images */
+      }
+
+      .placeholder {
+        background-color: #f0f0f0;
+        height: auto; /* Placeholder height (optional) */
+        width: 100%;
+        border: 1px dashed #ccc; /* Add a border for visibility (optional) */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-container"></div>
+
+    <script src="load-images.js"></script>
+  </body>
 </html>
